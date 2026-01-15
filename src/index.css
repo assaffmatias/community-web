@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "Jakarta-sans";
+  src: url('./fonts/plus-jakarta-sans-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: "Jakarta-sans-bold";
+  src: url('./fonts/plus-jakarta-sans-bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: "Playfair-display-italic";
+  src: url('./fonts/playfair-display-italic.woff2') format('woff2');
+}
+
+:root {
+  font-family: Jakarta-sans, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --bg: #fff;
+  --fg: #f6f8f6;
+
+  --nav-bg: #ffffffcc;
+  --nav-white: #fff;
+  --nav-black: #1f1f1f;
+
+  --black: #000;
+  --white: #fff;
+  --white1: #e5e7eb;
+  --green0: #025a4e;
+  --green1: #8fdcc2;
+  --green2: #025a4e31;
+  --green3: #025a4e18;
+  --gray0: #494949;
+
+  --title: #1f1f1f;
+  --border: #e7e7e7;
+}
+
+[data-theme=dark] {
+  --bg: #fff;
+  --fg: #f6f8f6;
+
+  --nav-bg: #ffffffcc;
+  --nav-white: #fff;
+  --nav-black: #1f1f1f;
+
+  --black: #000;
+  --white: #fff;
+  --white1: #e5e7eb;
+  --green0: #025a4e;
+  --green1: #8fdcc2;
+  --green2: #025a4e31;
+  --green3: #025a4e18;
+  --gray0: #494949;
+
+  --title: #1f1f1f;
+  --border: #e7e7e7;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-family: Jakarta-sans-bold, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}

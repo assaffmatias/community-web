@@ -1,0 +1,133 @@
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 2%;
+    width: 100%;
+    left: 0;
+    box-sizing: border-box;
+    gap: 20px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    animation: background-scroll linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 20px;
+}
+
+.logo_container {
+    display: flex;
+    align-items: center;
+    width: 250px;
+    height: 100%;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    fill: var(--nav-white);
+    animation: text-scroll linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 50px;
+}
+
+.link_content {
+    flex-grow: 1;
+}
+
+.link_content,
+.svg_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 40px;
+}
+
+.svg_content {
+    justify-content: flex-end;
+    width: 250px;
+    gap: 30px;
+}
+
+.yt_link {
+    display: flex;
+}
+
+.button_theme {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--nav-white);
+    margin: 0;
+    padding: 0;
+
+    animation: text-scroll linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 50px;
+}
+
+.link {
+    color: var(--nav-white);
+    text-decoration: none;
+    transition: .5s;
+    padding: 5px 15px;
+    border-radius: 999999px;
+    text-wrap: nowrap;
+
+    animation: text-scroll linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 50px;
+}
+
+.link:hover {
+    color: #8fdcc2;
+}
+
+.svg_yt_text {
+    fill: var(--nav-white);
+    animation: text-scroll linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 50px;
+}
+
+.svg_path {
+    stroke: var(--nav-white);
+    animation: svg-scroll linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 50px;
+}
+
+@keyframes background-scroll {
+    to {
+        background-color: var(--nav-bg);
+        backdrop-filter: blur(20px) saturate(1.7);
+        -webkit-backdrop-filter: blur(20px) saturate(1.7);
+    }
+}
+
+@keyframes text-scroll {
+    to {
+        color: var(--nav-black);
+        fill: var(--nav-black);
+    }
+}
+
+@keyframes svg-scroll {
+    to {
+        stroke: var(--nav-black);
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .link_content {
+        display: none;
+    }
+
+    .svg_content {
+        display: none;
+    }
+}
