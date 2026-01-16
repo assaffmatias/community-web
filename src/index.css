@@ -26,18 +26,19 @@
   --bg: #fff;
   --fg: #f6f8f6;
 
-  --nav-bg: #ffffffcc;
+  --nav-bg: #ffffff;
   --nav-white: #fff;
   --nav-black: #1f1f1f;
 
   --black: #000;
   --white: #fff;
   --white1: #e5e7eb;
-  --green0: #025a4e;
-  --green1: #8fdcc2;
+  --green0: #2D4B33;
+  --green1: #7FD791;
   --green2: #025a4e31;
   --green3: #025a4e18;
   --gray0: #494949;
+  --yellow: #F8B959;
 
   --title: #1f1f1f;
   --border: #e7e7e7;
@@ -47,15 +48,15 @@
   --bg: #fff;
   --fg: #f6f8f6;
 
-  --nav-bg: #ffffffcc;
+  --nav-bg: #ffffff;
   --nav-white: #fff;
   --nav-black: #1f1f1f;
 
   --black: #000;
   --white: #fff;
   --white1: #e5e7eb;
-  --green0: #025a4e;
-  --green1: #8fdcc2;
+  --green0: #2D4B33;
+  --green1: #7FD791;
   --green2: #025a4e31;
   --green3: #025a4e18;
   --gray0: #494949;
@@ -69,6 +70,10 @@ body {
   padding: 0;
 }
 
+button {
+  font-family: Jakarta-sans, sans-serif;
+}
+
 h1,
 h2,
 h3 {
@@ -79,4 +84,8 @@ h3 {
 a {
   text-decoration: none;
   color: #fff;
+}
+
+p {
+  color: var(--gray0);
 }
