@@ -45,7 +45,6 @@ const Blog = () => {
     return (
         <section className={styles.section} id="blog">
             <div className={styles.container}>
-                {/* HEADER */}
                 <div className={styles.header}>
                     <h3 className={styles.kicker}>Diário de viagem vivo</h3>
                     <h2 className={styles.title}>Destinos com Alma</h2>
@@ -77,13 +76,13 @@ const Blog = () => {
 
                                 <div
                                     className={
-                                        isLarge ? styles.overlayDark : styles.overlaySoft
+                                        isLarge ? styles.overlay_dark : styles.overlay_soft
                                     }
                                 />
 
                                 <div
                                     className={
-                                        isLarge ? styles.contentLarge : styles.content
+                                        isLarge ? styles.content_large : styles.content
                                     }
                                 >
                                     <div className={styles.location}>
@@ -96,7 +95,7 @@ const Blog = () => {
                                     <h3
                                         className={
                                             isLarge
-                                                ? styles.headingLarge
+                                                ? styles.heading_large
                                                 : styles.heading
                                         }
                                     >
@@ -105,7 +104,7 @@ const Blog = () => {
 
                                     <p
                                         className={
-                                            isLarge ? styles.text : styles.textSmall
+                                            isLarge ? styles.text : styles.text_small
                                         }
                                     >
                                         {item.description}
@@ -115,7 +114,6 @@ const Blog = () => {
                         );
                     })}
 
-                    {/* CTA fijo */}
                     <div className={styles.cta}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="44" viewBox="0 0 36 44" fill="none">
                             <path d="M22.5 35.5L13.5 32.35L6.525 35.05C6.025 35.25 5.5625 35.1937 5.1375 34.8812C4.7125 34.5687 4.5 34.15 4.5 33.625V12.625C4.5 12.3 4.59375 12.0125 4.78125 11.7625C4.96875 11.5125 5.225 11.325 5.55 11.2L13.5 8.5L22.5 11.65L29.475 8.95C29.975 8.75 30.4375 8.80625 30.8625 9.11875C31.2875 9.43125 31.5 9.85 31.5 10.375V31.375C31.5 31.7 31.4063 31.9875 31.2188 32.2375C31.0313 32.4875 30.775 32.675 30.45 32.8L22.5 35.5ZM21 31.825V14.275L15 12.175V29.725L21 31.825ZM24 31.825L28.5 30.325V12.55L24 14.275V31.825ZM7.5 31.45L12 29.725V12.175L7.5 13.675V31.45Z" fill="white" />

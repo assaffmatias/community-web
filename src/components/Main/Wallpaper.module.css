@@ -32,7 +32,7 @@
     }
 }
 
-.dotsBackground {
+.dots_background {
     position: absolute;
     inset: 0;
     opacity: 0.05;
@@ -142,7 +142,7 @@
     margin-top: 1rem;
 }
 
-.phoneWrapper {
+.phone_wrapper {
     position: relative;
     z-index: 1;
     display: flex;
@@ -152,12 +152,12 @@
 }
 
 @media (min-width: 768px) {
-    .phoneWrapper {
+    .phone_wrapper {
         transform: rotate(3deg);
     }
 }
 
-.phoneWrapper:hover {
+.phone_wrapper:hover {
     transform: rotate(0deg);
 }
 
@@ -172,7 +172,7 @@
     position: relative;
 }
 
-.phoneImage {
+.phone_image {
     position: absolute;
     inset: 0;
     width: 100%;
@@ -180,7 +180,7 @@
     object-fit: cover;
 }
 
-.phoneTime {
+.phone_time {
     position: absolute;
     top: 1rem;
     left: 0;

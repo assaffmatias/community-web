@@ -1,9 +1,11 @@
 import { Route, Routes } from "react-router-dom"
 import { useState, useEffect } from "react"
 import PATHROUTES from "./helpers/PathRoutes"
-import Home from "./views/Home"
+import Home from "./views/Home/Home"
 import Navbar from "./components/Navbar/Navbar"
-import About from "./views/About"
+import About from "./views/About/About"
+import Wallpaper from "./views/Wallpaper/Wallpaper"
+import Blog from "./views/Blog/Blog"
 
 function App() {
   const [darkMode, setDarkMode] = useState(() => {
@@ -21,15 +23,14 @@ function App() {
 
   const toggleTheme = () => setDarkMode((prev) => !prev);
 
-  console.log(darkMode);
-
-
   return (
     <>
       <Navbar toggleTheme={toggleTheme} darkMode={darkMode} />
       <Routes>
         <Route path={PATHROUTES.HOME} element={<Home />} />
         <Route path={PATHROUTES.ABOUT} element={<About />} />
+        <Route path={PATHROUTES.BLOG} element={<Blog />} />
+        <Route path={PATHROUTES.WALLPAPER} element={<Wallpaper />} />
       </Routes>
     </>
   )

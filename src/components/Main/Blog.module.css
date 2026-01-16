@@ -98,7 +98,7 @@
     }
 }
 
-.overlayDark {
+.overlay_dark {
     position: absolute;
     inset: 0;
     background: linear-gradient(to top,
@@ -107,7 +107,7 @@
             transparent);
 }
 
-.overlaySoft {
+.overlay_soft {
     position: absolute;
     inset: 0;
     background: linear-gradient(to top,
@@ -116,7 +116,7 @@
 }
 
 .content,
-.contentLarge {
+.content_large {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -124,7 +124,7 @@
     color: var(--white);
 }
 
-.contentLarge {
+.content_large {
     padding: 2rem;
 }
 
@@ -140,7 +140,7 @@
     margin-bottom: 0.5rem;
 }
 
-.headingLarge {
+.heading_large {
     font-size: 2rem;
     font-weight: 700;
 }
@@ -158,7 +158,7 @@
     margin-top: 0.25rem;
 }
 
-.textSmall {
+.text_small {
     font-size: 0.75rem;
     color: var(--white1);
     margin: 0;
@@ -197,4 +197,5 @@
     margin: 0;
     font-size: 0.875rem;
     opacity: 0.85;
+    color: var(--white);
 }

@@ -1,6 +1,7 @@
 .main_content {
     display: flex;
     overflow: hidden;
+    background-color: var(--black);
 }
 
 .video {
@@ -57,7 +58,7 @@
     align-items: center;
     justify-content: center;
     gap: 5px;
-    background-color: #025a4e;
+    background-color: #2D4B33;
     padding: 8px 20px;
     border-radius: 999999px;
 }
