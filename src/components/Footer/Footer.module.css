@@ -8,17 +8,17 @@
     padding: 0 1.5rem;
 }
 
-.topGrid {
+.top_grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 3rem;
     padding-bottom: 4rem;
-    border-bottom: 1px solid #f3f4f6;
+    border-bottom: 1px solid var(--fg);
     margin-bottom: 2rem;
 }
 
 @media (min-width: 768px) {
-    .topGrid {
+    .top_grid {
         grid-template-columns: repeat(4, 1fr);
     }
 }
@@ -27,17 +27,17 @@
     grid-column: span 1;
 }
 
-.brandName {
+.brand_name {
     font-weight: 700;
     font-size: 1.125rem;
     color: var(--title);
     display: block;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
-.brandText {
+.brand_text {
     font-size: 0.875rem;
-    color: var(--gray0);
+    color: var(--text);
     line-height: 1.6;
 }
 
@@ -59,16 +59,15 @@
 
 .list a {
     font-size: 0.875rem;
-    color: var(--gray0);
+    color: var(--text);
     text-decoration: none;
     transition: color 0.2s;
 }
 
 .list a:hover {
-    color: var(--green0);
+    color: var(--primary);
 }
 
-/* SOCIAL */
 .socials {
     display: flex;
     gap: 1rem;
@@ -78,11 +77,11 @@
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 999px;
-    background: #f3f4f6;
+    background: var(--fg);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--gray0);
+    color: var(--text);
     transition: all 0.3s ease;
 }
 
@@ -92,7 +91,7 @@
 }
 
 .social:hover {
-    background: var(--green0);
+    background: var(--primary);
     color: var(--white);
 }
 
@@ -103,7 +102,7 @@
     align-items: center;
     justify-content: space-between;
     font-size: 0.75rem;
-    color: var(--gray0);
+    color: var(--text);
 }
 
 @media (min-width: 768px) {
@@ -118,11 +117,11 @@
 }
 
 .legal a {
-    color: var(--gray0);
+    color: var(--text);
     text-decoration: none;
     transition: color 0.2s;
 }
 
 .legal a:hover {
-    color: var(--green0);
+    color: var(--primary);
 }

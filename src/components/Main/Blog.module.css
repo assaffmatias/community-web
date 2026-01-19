@@ -21,7 +21,7 @@
     letter-spacing: 0.15em;
     margin-bottom: 1em;
     font-weight: 700;
-    color: var(--green0);
+    color: var(--primary);
 }
 
 .title {
@@ -34,7 +34,7 @@
     margin: 0;
     max-width: 20rem;
     font-size: 0.875rem;
-    color: var(--gray0);
+    color: var(--text);
 }
 
 .grid {
@@ -136,7 +136,7 @@
     font-weight: 700;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    color: var(--green1);
+    color: var(--secondary);
     margin-bottom: 0.5rem;
 }
 
@@ -166,7 +166,7 @@
 }
 
 .cta {
-    background: var(--green0);
+    background: var(--primary);
     color: var(--white);
     border-radius: 1.5rem;
     padding: 2rem;

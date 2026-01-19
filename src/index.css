@@ -33,41 +33,47 @@
   --black: #000;
   --white: #fff;
   --white1: #e5e7eb;
-  --green0: #2D4B33;
-  --green1: #7FD791;
+  --primary: #2D4B33;
+  --secondary: #7FD791;
   --green2: #025a4e31;
   --green3: #025a4e18;
-  --gray0: #494949;
-  --yellow: #F8B959;
+  --text: #494949;
+  --badge-bg: #dddfdd;
+  --badge-text: #2D4B33;
 
   --title: #1f1f1f;
   --border: #e7e7e7;
+  --border2: #1f1f1f25;
 }
 
 [data-theme=dark] {
-  --bg: #fff;
-  --fg: #f6f8f6;
+  --bg: #121212;
+  --fg: #1a1a1a;
 
-  --nav-bg: #ffffff;
+  --nav-bg: #121212;
   --nav-white: #fff;
-  --nav-black: #1f1f1f;
+  --nav-black: #fff;
 
   --black: #000;
   --white: #fff;
   --white1: #e5e7eb;
-  --green0: #2D4B33;
-  --green1: #7FD791;
-  --green2: #025a4e31;
+  --primary: #2D4B33;
+  --secondary: #7FD791;
+  --green2: #2d4b333d;
   --green3: #025a4e18;
-  --gray0: #494949;
+  --text: #a7a5a5;
+  --badge-bg: #00000049;
+  --badge-text: #7FD791;
 
-  --title: #1f1f1f;
-  --border: #e7e7e7;
+  --title: #fdfdfd;
+  --border: #1f1f1f;
+  --border2: #1f1f1f25;
 }
 
 body {
   margin: 0;
   padding: 0;
+  background-color: var(--bg);
 }
 
 button {
@@ -87,5 +93,5 @@ a {
 }
 
 p {
-  color: var(--gray0);
+  color: var(--text);
 }

@@ -1,6 +1,5 @@
 .section {
     padding: 8rem 1.5rem;
-    background: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,7 +39,7 @@
 }
 
 .highlight {
-    color: var(--green0);
+    color: var(--primary);
     text-decoration: underline;
     text-decoration-color: var(--green2);
     text-underline-offset: 8px;
@@ -52,6 +51,6 @@
     font-size: 0.75rem;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    color: #6b7280;
+    color: var(--text);
     font-style: normal;
 }

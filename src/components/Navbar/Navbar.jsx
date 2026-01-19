@@ -1,10 +1,11 @@
 import styles from "./Navbar.module.css"
 import PATHROUTES from "../../helpers/PathRoutes"
 import { useState } from "react"
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 
 const Navbar = ({ toggleTheme, darkMode }) => {
     const [modal, setModal] = useState(false);
+    const location = useLocation();
 
     const handleModal = () => {
         setModal(!modal);
@@ -17,6 +18,10 @@ const Navbar = ({ toggleTheme, darkMode }) => {
     const scrollTop = () => {
         window.scrollTo(0, 0);
     };
+
+    if (location.pathname === PATHROUTES.LOGIN) {
+        return null;
+    }
 
     return (
         <>
@@ -52,25 +57,12 @@ const Navbar = ({ toggleTheme, darkMode }) => {
                         </svg>
                     </a>
 
-                    <button onClick={toggleTheme} className={styles.button_theme}>
-                        {!darkMode && (
-                            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24">
-                                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth=".8" d="M12 21a9 9 0 0 1-.5-17.986V3c-.354.966-.5 1.911-.5 3a9 9 0 0 0 9 9c.239 0 .254.018.488 0A9.004 9.004 0 0 1 12 21Z" />
-                            </svg>
-
-                        )}
-
-                        {darkMode && (
-                            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24">
-                                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth=".8" d="M12 5V3m0 18v-2M7.05 7.05 5.636 5.636m12.728 12.728L16.95 16.95M5 12H3m18 0h-2M7.05 16.95l-1.414 1.414M18.364 5.636 16.95 7.05M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z" />
-                            </svg>
-                        )}
-                    </button>
-
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <path className={styles.svg_path} d="M17.25 7C17.25 4.10051 14.8995 1.75 12 1.75C9.10051 1.75 6.75 4.10051 6.75 7C6.75 9.8995 9.10051 12.25 12 12.25C14.8995 12.25 17.25 9.8995 17.25 7Z" stroke="currentColor" />
-                        <path className={styles.svg_path} d="M22 22C22 20 22 19.5 21 18C20.2 16.8 17 16.167 16.5 16C16 15.833 13.5 15.5 12 15.5C10.5 15.5 8 15.833 7.5 16C7 16.167 3.8 16.8 3 18C2 19.5 2 20 2 22" stroke="currentColor" strokeLinecap="round" />
-                    </svg>
+                    <Link className={styles.svg_link} to={PATHROUTES.LOGIN}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path className={styles.svg_path} d="M17.25 7C17.25 4.10051 14.8995 1.75 12 1.75C9.10051 1.75 6.75 4.10051 6.75 7C6.75 9.8995 9.10051 12.25 12 12.25C14.8995 12.25 17.25 9.8995 17.25 7Z" stroke="currentColor" />
+                            <path className={styles.svg_path} d="M22 22C22 20 22 19.5 21 18C20.2 16.8 17 16.167 16.5 16C16 15.833 13.5 15.5 12 15.5C10.5 15.5 8 15.833 7.5 16C7 16.167 3.8 16.8 3 18C2 19.5 2 20 2 22" stroke="currentColor" strokeLinecap="round" />
+                        </svg>
+                    </Link>
 
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path className={styles.svg_path} d="M7.1802 7.58C7.1802 4.36 9.2402 1.75 11.7902 1.75C14.3402 1.75 16.4002 4.36 16.4002 7.58M11.7902 7.58C2.0402 7.58 0.690195 6.97 2.3502 16.18C3.3002 21.48 3.9802 22.22 11.7902 22.22C19.6002 22.22 20.2802 21.47 21.2302 16.18C22.8902 6.97 21.5502 7.58 11.7902 7.58Z" stroke="currentColor" strokeMiterlimit="10" />
@@ -128,10 +120,12 @@ const Navbar = ({ toggleTheme, darkMode }) => {
                                 )}
                             </button>
 
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path className={styles.svg_path_mobile} d="M17.25 7C17.25 4.10051 14.8995 1.75 12 1.75C9.10051 1.75 6.75 4.10051 6.75 7C6.75 9.8995 9.10051 12.25 12 12.25C14.8995 12.25 17.25 9.8995 17.25 7Z" stroke="currentColor" />
-                                <path className={styles.svg_path_mobile} d="M22 22C22 20 22 19.5 21 18C20.2 16.8 17 16.167 16.5 16C16 15.833 13.5 15.5 12 15.5C10.5 15.5 8 15.833 7.5 16C7 16.167 3.8 16.8 3 18C2 19.5 2 20 2 22" stroke="currentColor" strokeLinecap="round" />
-                            </svg>
+                            <Link to={PATHROUTES.LOGIN}>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path className={styles.svg_path_mobile} d="M17.25 7C17.25 4.10051 14.8995 1.75 12 1.75C9.10051 1.75 6.75 4.10051 6.75 7C6.75 9.8995 9.10051 12.25 12 12.25C14.8995 12.25 17.25 9.8995 17.25 7Z" stroke="currentColor" />
+                                    <path className={styles.svg_path_mobile} d="M22 22C22 20 22 19.5 21 18C20.2 16.8 17 16.167 16.5 16C16 15.833 13.5 15.5 12 15.5C10.5 15.5 8 15.833 7.5 16C7 16.167 3.8 16.8 3 18C2 19.5 2 20 2 22" stroke="currentColor" strokeLinecap="round" />
+                                </svg>
+                            </Link>
 
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path className={styles.svg_path_mobile} d="M7.1802 7.58C7.1802 4.36 9.2402 1.75 11.7902 1.75C14.3402 1.75 16.4002 4.36 16.4002 7.58M11.7902 7.58C2.0402 7.58 0.690195 6.97 2.3502 16.18C3.3002 21.48 3.9802 22.22 11.7902 22.22C19.6002 22.22 20.2802 21.47 21.2302 16.18C22.8902 6.97 21.5502 7.58 11.7902 7.58Z" stroke="currentColor" strokeMiterlimit="10" />

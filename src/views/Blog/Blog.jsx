@@ -1,45 +1,57 @@
 import React from 'react';
 import styles from './Blog.module.css';
 import Footer from '../../components/Footer/Footer';
+import { Link } from 'react-router-dom';
+import PATHROUTES from '../../helpers/PathRoutes';
 
 const stories = [
     {
+        id: 1,
         imageUrl:
             'https://lh3.googleusercontent.com/aida-public/AB6AXuBjDVkKflTgrZ_1rZhK8XUsFSkzFscq-8kU3zhsKLKLtqfy26e-kxMpLrRGuuZDM1GidGhAcdhAPE0_cAlbpRO_rswzb2fraB5Z9cIzwJaG8osoylSQgG7fUNYFqzWwUMfslFIHWRh85WW2DThxQ6nbYvhGf8molibdRLGLefzwieOLYm7CeEuuHQXAM_4nlJpEVL66yIaxk5KVZuKoivO_LkUosg6y8t2qqsEVtdlpMBqzPns7PBkJgNfNuiyIrhXlkHan4n_L_o8',
         category: 'Natureza',
         title: 'Flavor of the Wild: Gastronomia Outdoor',
     },
     {
+        id: 2,
         imageUrl:
             'https://lh3.googleusercontent.com/aida-public/AB6AXuCkKwzo3NlZ9IT_RD0sHewYYyuK6IkUODr1etF8lQ0gLZr8QUIAMGezpp4h4BBiMefZSnfvlZ5zj-BFwLa4nV9_ps3BvZ2PU9GlXAat-YEYFLns8tsJFGc79CkPw-maMPxNeUg730bdX8WXRyqKkrwOxTYsht3TLht-XUX5PjwEm39UZH9KdH8n6PPRix50eolh32Q9AR2lxJDKiWVsc5FsjwY9lGzMrmRoS3C4VghEg_AjyJLA5lz3ymAztRTMONrdaWRRpAKSKC8',
         category: 'Expedição',
         title: 'Nas Profundezas da Floresta Nublada',
     },
     {
+        id: 3,
         imageUrl:
             'https://lh3.googleusercontent.com/aida-public/AB6AXuDYYZHxcjf7vpCYss95-hA86Le8tHOM9sG3tkCI24ncLT3OjMOJ4YoY0OjKw23N5iBvDo5FQ472p5q5KVCw1zLal1EFkdcjaskXFc_6wfkE1-wuzERuNFqXqpThxdwuBzaFYRMrlhRvKJvTqntGIUVFS5NhpN-ZTzC-NvLoqqR_RVyf91ne6dk3w48QHYWUtDD1zsfmyuHUNImLpGr0F9JV5qQ8eY1amJXFhi1mHFsb3YpxKraEicWvnDv2h5JHA4bwaSDHqMVI6x4',
         category: 'Dicas',
         title: 'Um Milhão de Estrelas: Guia de Astrofotografia',
     },
     {
+        id: 4,
         imageUrl:
             'https://lh3.googleusercontent.com/aida-public/AB6AXuB-8XOuuzUW8hKH2b3mAJu3ekrEPlpUhDbQEn14uY2oME8dkygr3s58CMDstqewoEIti1ciULmKzJoJkOQEHFD4_jg5RaaeEr87-Ue_S9EsGacdmdR3GTY37dB7PwW4NLIPeMkTrAw4J50AwsjEsWY3tBBL_pgQJ37sJRFxCmNEVPYn4Vf6aZIgfF79OykmVZy2FXmBy1r5Ueg_ettpXMssD6DAPRwVD4QV-g1dkftySX-TNz-PT5VM0q6Fi7DXWsgoLPnBCBDdFPM',
         category: 'Montanha',
         title: 'Reflexos: A Calmaria dos Lagos Alpinos',
     },
     {
+        id: 5,
         imageUrl:
             'https://lh3.googleusercontent.com/aida-public/AB6AXuAqe3CZnbLHli5nNxDhYm7rWPj0ntPCxnGzCE4nZBB_AGGKI2cll5-kkDzi47OMVEpdOn1-7WBYWcKf8yBpsWVgkPpXVPAPX49531W6HiMTxbmHza7ksmin6ZsnoTZq87GYqNI2S6iVWIhJD4kDL2ZlFRft0mUAgQJRSkjNBKLaJheJvZMjeR8trAGDPBJcBlP0zdezZKe8ZzAN7DnvFfeETROUhpVfnl8dZitJKuPIWTcWP5FAotLbK0LXgX8HLAjWVxHdZLUb9SE',
         category: 'Vanlife',
         title: 'A Liberdade de Viver em Quatro Rodas',
     },
     {
+        id: 6,
         imageUrl:
             'https://lh3.googleusercontent.com/aida-public/AB6AXuBestFkZxoIuW6Qx-EOmwf65_7kxa0D8NOF1zyUkKq4xGAyyASCVRlqtLCDbQ0KxcGouhnO6H5MqKQB-OE8UFzkq1iVOjxrxIywrHcg4CkP6ofDKoFQm05O-U1BeUrQwnqB3SjBdcRVF8c9U3rFbBjxxGRGGh2pX4hoC3JQs-FwaAU35FwWAFAmqlOl6JOKUMQH4cJ7eI-ntx9kFGyhajDDhs1TDzBxgFC9GxxqFVherWmVV80wqUHakIs7-JMWNoHQS2inc3KpyRM',
         category: 'Mente',
         title: 'Solidão e Silêncio: O que a trilha ensina',
     },
 ];
+
+const scrolToTop = () => {
+    window.scrollTo(0, 0);
+}
 
 const Blog = () => {
     return (
@@ -106,7 +118,7 @@ const Blog = () => {
 
                 <div className={styles.stories_grid}>
                     {stories.map((story, index) => (
-                        <div key={index} className={styles.story_card}>
+                        <Link to={`/blog/${story.id}`} onClick={scrolToTop} key={index} className={styles.story_card}>
                             <div className={styles.story_image_wrapper}>
                                 <div
                                     className={styles.story_background}
@@ -119,7 +131,7 @@ const Blog = () => {
                                     <h3 className={styles.story_title}>{story.title}</h3>
                                 </div>
                             </div>
-                        </div>
+                        </Link>
                     ))}
                 </div>
             </section>

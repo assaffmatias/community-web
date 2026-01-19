@@ -11,7 +11,7 @@
     right: 0;
     width: 50%;
     height: 100%;
-    background: linear-gradient(to left, white, transparent);
+    /* background: linear-gradient(to left, white, transparent); */
     pointer-events: none;
 }
 
@@ -52,7 +52,7 @@
     aspect-ratio: 4 / 5;
     border-radius: 1.5rem;
     overflow: hidden;
-    border: 1px solid #f3f4f6;
+    border: 1px solid var(--border);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
@@ -89,7 +89,7 @@
 
 .role {
     margin: 0;
-    color: #8fdcc2;
+    color: var(--secondary);
     font-size: 0.75rem;
     letter-spacing: 0.15em;
     text-transform: uppercase;
@@ -139,7 +139,7 @@
 }
 
 .highlight {
-    color: var(--green0);
+    color: var(--primary);
     font-style: italic;
     font-family: serif;
 }
@@ -148,13 +148,13 @@
     display: flex;
     flex-direction: column;
     gap: 1;
-    color: var(--gray0);
+    color: var(--text);
     font-size: 1.125rem;
     line-height: 1.7;
 }
 
 .quote {
-    border-left: 4px solid var(--green0);
+    border-left: 4px solid var(--primary);
     padding-left: 1.5rem;
     color: var(--title);
     font-weight: 500;
@@ -179,7 +179,7 @@
 }
 
 .button:hover {
-    background: var(--green0);
+    background: var(--primary);
     color: var(--white);
     transform: translateY(-1px);
 }

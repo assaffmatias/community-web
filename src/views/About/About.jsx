@@ -89,11 +89,6 @@ const About = () => {
                                     Acreditamos que o turismo pode ser uma força para o bem. Compartilhamos dicas práticas de como minimizar seu
                                     impacto ambiental e maximizar sua conexão com os lugares que visita.
                                 </p>
-
-                                {/* <div className={styles.consciencia_tip}>
-                                    <span className="material-symbols-outlined">public</span>
-                                    <span>Consumo Consciente</span>
-                                </div> */}
                             </div>
                         </div>
                     </div>
