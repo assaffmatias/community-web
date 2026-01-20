@@ -8,7 +8,7 @@ const Wallpaper = () => {
                     <div className={styles.dots_background} />
 
                     <div className={styles.content}>
-                        <span className={styles.badge}>Presente grátis</span>
+                        <span className={styles.badge}>Um presente</span>
 
                         <h2 className={styles.title}>
                             Leve um pedaço da estrada com você.
@@ -20,11 +20,11 @@ const Wallpaper = () => {
                         </p>
 
                         <div className={styles.form}>
-                            <input
+                            {/* <input
                                 type="email"
                                 placeholder="Seu endereço de email"
                                 className={styles.input}
-                            />
+                            /> */}
 
                             <button className={styles.button}>
                                 Obtenha Wallpapers

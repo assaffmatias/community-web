@@ -53,11 +53,10 @@ const Blog = () => {
         <section className={styles.section} id="blog">
             <div className={styles.container}>
                 <div className={styles.header}>
-                    <h3 className={styles.kicker}>Diário de viagem vivo</h3>
+                    <h3 className={styles.kicker}>Diário de viagem</h3>
                     <h2 className={styles.title}>Destinos com Alma</h2>
                     <p className={styles.description}>
-                        Uma coleção de lugares que marcaram nossas almas. Sensorial
-                        Memórias da estrada.
+                        Uma coleção de lugares que marcaram nossas almas. Sensorial Memórias da estrada.
                     </p>
                 </div>
 

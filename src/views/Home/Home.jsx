@@ -11,8 +11,8 @@ const Home = () => {
     return (
         <>
             <Header />
-            <Youtube />
             <About />
+            <Youtube />
             <Phrase />
             <Blog />
             <Wallpaper />

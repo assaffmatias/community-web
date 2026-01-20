@@ -29,7 +29,7 @@ const Youtube = () => {
                 <div className={styles.header}>
                     <div className={styles.header_text}>
                         <h3 className={styles.kicker}>Histórias Visuais</h3>
-                        <h2 className={styles.title}>Momentos selecionados da estrada</h2>
+                        <h2 className={styles.title}>Melhores momentos</h2>
                     </div>
 
                     <a href="https://www.youtube.com/@vivendoemviagem" target="_blank" className={styles.desktop_link}>
