@@ -1,10 +1,10 @@
 import styles from "./Header.module.css";
-import video from "../../assets/header-video.mp4"
+import banner from "../../assets/header-banner.jpg";
 
 const Header = () => {
     return (
         <header className={styles.main_content}>
-            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvKu4g4cYm0CBCv0n9FEEmry0cVJiKseeSj7NhKSbg4_nvjUvhvattRCgvcKPhjS2_j3n8ite-_OX1BWYUADFOBHrY8oak4xKqIipuNxAJ-auq1Uxpw95cPpcgGXUTGe1X_qrid4qININLGZw5mSnk4mLNE45dg9S1bAuzJcBLaRPXCn1OdFIvPPVXf4D3T1TN0N2c5v8NUHOlA84ta6xiIeUfrQ7GtG6kgpe2xnYsJel4beq9Tp2USBquwwlw-kV1i4P010NE4eA" alt="" className={styles.video} />
+            <img src={banner} alt="" className={styles.video} />
             {/* <video className={styles.video} src={video} loop autoPlay muted ></video> */}
             <div className={styles.filter}></div>
             <div className={styles.text_content}>

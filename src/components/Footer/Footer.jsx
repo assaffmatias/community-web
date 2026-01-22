@@ -31,7 +31,7 @@ const Footer = () => {
                         <h4 className={styles.heading}>Explorar</h4>
                         <ul className={styles.list}>
                             <li><a href="https://www.youtube.com/@vivendoemviagem/playlists" target="_blank">Destinos</a></li>
-                            <li><a href="#">O equipamento que usamos</a></li>
+                            <li><a href="#">Equipamento que usamos</a></li>
                             <li><a href="#">Seguro de viagem</a></li>
                             <li><Link to={PATHROUTES.BLOG} onClick={scrollTop}>Nosso Diário</Link></li>
                         </ul>

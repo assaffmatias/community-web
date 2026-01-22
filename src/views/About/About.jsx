@@ -19,16 +19,27 @@ const About = () => {
                     <div className={styles.grid_two_columns}>
                         <div className={styles.content_left}>
                             <h2 className={styles.section_title}>Somos Deividi & Paula</h2>
+                            <p className={styles.section_subtitle}>Um casal apaixonado por viagens, histórias e pessoas.</p>
                             <div className={styles.text_content}>
                                 <p>
-                                    A paixão por explorar o desconhecido nos uniu em uma jornada que vai muito além de simples destinos
-                                    turísticos. O Vivendo em Viagem nasceu da nossa vontade de compartilhar não apenas fotos bonitas, mas a
-                                    realidade de uma vida consciente na estrada.
+                                    Em 2023, decidimos deixar nossos trabalhos convencionais Paula,
+                                    farmacêutica; Deividi, da área comercial, e também uma vida estável e
+                                    feliz que, aos poucos, já não fazia mais sentido para nós. Fomos
+                                    percebendo que a estrada nos convidava a viver algo diferente, uma
+                                    vida mais viva, mais presente.
                                 </p>
                                 <p>
-                                    Para nós, viajar é um processo de autoconhecimento. Deixamos para trás a rotina convencional para abraçar o
-                                    mundo como nossa casa, aprendendo a cada quilômetro sobre sustentabilidade, respeito cultural e a beleza da
-                                    simplicidade.
+                                    O Vivendo em Viagem nasceu em nossos corações não apenas para
+                                    compartilhar fotos ou roteiros incríveis, mas para dividir com o mundo a
+                                    experiência de viver a vida que sempre sonhamos.
+                                </p>
+                                <p>
+                                    Para nós, viajar é um profundo processo de autoconhecimento.
+                                    Deixamos para trás a rotina convencional para abraçar o mundo como
+                                    nossa casa. A estrada nos transformou a ponto de entendermos que a
+                                    felicidade mora no simples, que o outro é essencial, que respeitar e
+                                    apreciar culturas e histórias nos torna mais sábios e que estar presente
+                                    é o que realmente nos mantém vivos.
                                 </p>
                             </div>
                         </div>
@@ -81,13 +92,22 @@ const About = () => {
                             <h2 className={styles.section_title}>Queremos te inspirar</h2>
                             <div className={styles.text_content}>
                                 <p>
-                                    Nossa missão é mostrar que uma vida nômade e consciente é possível. Através de nossos relatos, queremos
-                                    inspirar você a buscar sua própria versão de liberdade, seja ela em uma viagem de final de semana ou em uma
-                                    mudança radical de estilo de vida.
+                                    Nossa missão é mostrar que uma vida nômade é possível. Através de
+                                    nossos relatos, queremos inspirar você a buscar sua própria liberdade,
+                                    seja ela em uma viagem de final de semana ou em uma mudança
+                                    radical de estilo de vida.
                                 </p>
                                 <p>
-                                    Acreditamos que o turismo pode ser uma força para o bem. Compartilhamos dicas práticas de como minimizar seu
-                                    impacto ambiental e maximizar sua conexão com os lugares que visita.
+                                    Acreditamos que grandes mudanças não começam com muito, mas
+                                    com a decisão de dar o primeiro passo.
+                                </p>
+                                <p>
+                                    Por isso, compartilhamos nossas experiências, aprendizados e tudo o
+                                    que fomos descobrindo ao longo do caminho, mostrando que é possível
+                                    viajar com consciência, respeito e simplicidade. Se o seu desejo é
+                                    colocar o pé na estrada, queremos caminhar com você. Dividimos nosso
+                                    conhecimento para ajudar a transformar o sonho da viagem em algo
+                                    real, possível e verdadeiro
                                 </p>
                             </div>
                         </div>

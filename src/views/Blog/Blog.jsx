@@ -85,8 +85,9 @@ const Blog = () => {
                             <div className={styles.text_group}>
                                 <h2 className={styles.newsletter_title}>Abra suas janelas</h2>
                                 <p className={styles.newsletter_description}>
-                                    Assine nossa newsletter para receber histórias exclusivas, guias de viagem secretos e
-                                    papéis de parede semanais diretamente na sua caixa de entrada.
+                                    Assine nossa newsletter para receber histórias exclusivas,
+                                    guias de viagem secretas semanalmente diretamente em sua caixa de
+                                    entrada.
                                 </p>
                             </div>
 

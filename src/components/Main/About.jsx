@@ -35,27 +35,33 @@ const About = () => {
 
                         <div className={styles.text}>
                             <p>
-                                A estrada não é apenas um meio de ir do ponto A ao ponto B. Para nós,
-                                ela é uma entidade viva. Criamos o Vivendo em Viagem para documentar a
-                                beleza crua e autêntica da América do Sul, longe das armadilhas para turistas.
+                                Queremos encorajar você a ouvir seus sonhos, se permitir viajar mais e
+                                viver a vida com espírito de aventura, porque não é preciso muito para
+                                começar.
                             </p>
 
                             <p>
-                                Nossa jornada é sobre desacelerar. É sobre o café preparado
-                                em um fogareiro de acampamento ao nascer do sol, as conversas com os moradores em
-                                vilarejos esquecidos e o silêncio das vastas paisagens que
-                                nos cercam.
+                                Em 2023, saímos de nossos trabalhos e escolhemos deixar a
+                                estabilidade para viver um sonho, conhecer o mundo de forma
+                                verdadeira.
+                            </p>
+
+                            <p>
+                                Muitos acham loucura trocar o seguro pelo desconhecido.
+                                Para nós, loucura seria chegar ao fim da vida sem ter estado
+                                verdadeiramente presente e ter deixado esse sonho guardado em uma
+                                caixa fechada. Então, decidimos arriscar e seguir Vivendo em Viagem.
                             </p>
 
                             <p className={styles.quote}>
-                                "Viajar profundamente é o antídoto para uma vida agitada. Nós não apenas
-                                consumimos destinos; nós habitamos o momento."
+                                "Às vezes, tudo o que um sonho precisa é de coragem para dar o
+                                primeiro passo."
                             </p>
                         </div>
 
                         <div className={styles.cta}>
                             <a href="#" className={styles.button}>
-                                Leia nossa história completa
+                                Historia Completa
                             </a>
                         </div>
                     </div>

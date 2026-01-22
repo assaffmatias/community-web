@@ -32,15 +32,6 @@ const Navbar = ({ toggleTheme, darkMode }) => {
                     </svg>
                 </Link>
 
-                <div className={styles.hamburgers}>
-                    <label className={styles.hamburger}>
-                        <input className={styles.hamburger_input} type="checkbox" onClick={handleModal} />
-                        <span className={styles.bar}></span>
-                        <span className={styles.bar}></span>
-                        <span className={styles.bar}></span>
-                    </label>
-                </div>
-
                 <div className={styles.link_content}>
                     <Link className={styles.link} to={PATHROUTES.ABOUT} onClick={scrollTop}>Sobre Nós</Link>
                     <Link className={styles.link}>Comunidade</Link>
